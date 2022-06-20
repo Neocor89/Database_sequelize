@@ -9,6 +9,7 @@ const auth = require('./middleware/auth');
 
 // const userCtrl = require('./controllers/user');
 //+ En  attente d'ajout des controllers
+
 // const postsRoutes = require('./routes/posts');
 // const userRoutes = require('./routes/user');
 //+ En  attente d'ajout des controllers
