@@ -1,10 +1,10 @@
-// const db = require('../models');
-// const Sequelize = db.Sequelize;
+const db = require('../models');
+const Sequelize = db.Sequelize;
 //+ En attente de la création de la BDD et des models +
 
 const jwt = require('jsonwebtoken');
 
-// const { User } = db.sequelize.models;
+const { User } = db.sequelize.models;
 //+ En attente de la création du models User de la BDD
 
 //: Création d'un token signé
@@ -28,7 +28,7 @@ exports.signup = (req, res, next) => {
     .catch((error) => res.status(401).json({ error: error }));
 };
 
-//:: En attente de la création de la BDD ::
+//:: En attente de la création de la BDD :: 
 exports.login = async (req, res, next) => {
   try {
     const response = await User.authenticate(req.body.email, req.body.password);
