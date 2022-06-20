@@ -1,6 +1,5 @@
 "use strict";
 const { Model } = require("sequelize");
-//? const { Sequelize, Model, DataTypes } = require("sequelize");
 
 const {
   CheckEncryptedPassword,
