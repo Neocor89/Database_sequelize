@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
     }
-  }
+  } //: DataTypes User
   User.init({
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
