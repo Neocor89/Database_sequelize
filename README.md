@@ -14,6 +14,58 @@ It features solid transaction support, relations, eager and lazy loading, read r
 
 Sequelize follows Semantic Versioning and supports *Node v10* and above.
 
+sequelize-cli
+-
+
+*sequelize-cli* is is a command line interface for *sequelize*
+it allows versioning of your database by keeping track of changes and evolution of your database throughout your project.
+sequelize-cli is used for data migration and database bootstrapping
+## Setup
+
+### `steps to follow`
+
+1️⃣ Clone or download the project and and install the dependencies
+
+```node
+cd <your_folder>
+npm install
+```
+
+2️⃣ Initialize the database with sequelize-cli
+
+```
+npx sequelize-cli init
+```
+
+This command creates 4 folders, the **config** folder with the *config.json* file, a **migrations** folder, a **seeders** folder and a **models** folder containing an *index.js* file.
+
+3️⃣ Launch your database serve
+
+Login to **mysql** with your usual login and password or launch your servers via **xampp** **lampp** **mampp**.
+
+4️⃣ Create your database
+
+You can create your database directly on mysql or phpmyadmin.
+
+It is also possible to create your database with seq-cli with the commade :
+
+```
+npx sequelize-cli db:create <nmae_of_your_database>
+```
+
+5️⃣ Create the models of your database tables
+
+To create the `models` of your database tables use the sequelize-cli command :
+
+```
+npx sequelize-cli models:generate --name your_name_of_table --attributes your_attribute:datatype
+```
+
+- Example :
+```sql
+npx sequelize-cli models:generate --name User --attributes firstname:string, age:integer
+```
+
 ### **Sequelize Commandes** 
 
 🧾 list and description of possible actions

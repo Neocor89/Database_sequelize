@@ -1,6 +1,10 @@
-const db = require('../models');
+// const db = require('../models');
+//+ En  attente de l'ajout de des models de la BDD +
+
 const jwt = require('jsonwebtoken');
-const { User } = db.sequelize.models;
+
+// const { User } = db.sequelize.models;
+//+ En attente de la base de données +
 
 module.exports = (req, res, next) => {
   try {
