@@ -63,7 +63,7 @@ npx sequelize-cli models:generate --name your_name_of_table --attributes your_at
 
 - Example :
 ```sql
-npx sequelize-cli model:generate --name User --attributes firstname:string, age:integer
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string,password:string,admin:boolean
 ```
 
 ### **Sequelize Commandes** 
