@@ -19,6 +19,14 @@
 //     email: DataTypes.STRING,
 //     password: DataTypes.STRING,
 //     admin: DataTypes.BOOLEAN
+//: groupomania
+//firstName: DataTypes.STRING,
+//    lastName: DataTypes.STRING,
+//    email: DataTypes.STRING,
+//    password: DataTypes.STRING,
+//    imageUrl: DataTypes.STRING,
+//    admin: DataTypes.BOOLEAN
+//: groupomania
 //   }, {
 //     sequelize,
 //     modelName: 'User',
