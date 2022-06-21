@@ -61,7 +61,7 @@ exports.getAllPosts = (req, res, next) => {
       userId: parseInt(req.query.userId),
     };
   }
-
+//: Catch all posts
   Post.findAll(options)
     .then((posts) => res.status(200).json({ posts }))
     .catch((error) => res.status(400).json({ error }));

@@ -12,7 +12,7 @@ function CheckEncryptedPassword(value) {
 }
 
 //: Creation of salting function password :
-function addAuthentication(User) {
+function addAuthentification(User) {
   const encryptPassword = (user) => {
     if (user.changed('password')) {
       return bcrypt.hash(user.password, 10).then((hash) => {
@@ -40,5 +40,5 @@ function addAuthentication(User) {
 
 module.exports = {
   CheckEncryptedPassword,
-  addAuthentication,
+  addAuthentification,
 };
