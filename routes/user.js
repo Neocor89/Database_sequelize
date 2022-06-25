@@ -13,8 +13,8 @@ router.post('/login', userCtrl.login);
 router.put('/edit', auth, multer, userCtrl.editUser);
 
 //+ Déplacé app.js + ajout router
-// router.get('/api/users/:id', auth, userCtrl.getOneUser);
-// router.get('/api/users', auth, userCtrl.getAllUsers);
-// router.delete('/api/users/:id', auth, userCtrl.deleteUserAccount);
+router.get('/api/users/:id', auth, userCtrl.getOneUser);
+router.get('/api/users', auth, userCtrl.getAllUsers);
+router.delete('/api/users/:id', auth, userCtrl.deleteUserAccount);
 
 module.exports = router;
